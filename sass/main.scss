@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700");
+@import "_variables.scss";
+@import "_style.scss";
+@import "_base.scss";
+
+.article {
+	width: 50%;
+	margin: 35px auto;
+	border-radius: 10px;
+	border: 2px solid #ddd;
+	padding: 20px;
+	box-sizing: border-box;
+	// Element
+	& __title{
+		color: black;
+		margin: 0;
+		padding: 5px;
+	}
+	& __desc{
+		line-height: 22px;
+	}
+}
+
+//MODIFICAR
+.article--green{
+	background: $white;
+	.article__title{
+		padding: 5px;
+		font-size: 26px;
+	}
+}
+.article__img{
+	width: 100%;
+}
+
+.pie{
+	background: $fondo;
+}
+.pie__item--center{
+	font-size: 16px;
+	color: $white;
+	text-align: center !important;
+	padding:20px;
+	margin: 0;
+}
